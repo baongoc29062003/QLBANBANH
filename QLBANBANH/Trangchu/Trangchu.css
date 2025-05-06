@@ -1,0 +1,89 @@
+html, body {
+  width: 100%;
+  height: auto;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.sanpham-container {
+  width: 100%;
+  height: 100%;
+  display: grid;
+  grid-template-columns: auto auto auto auto;
+  justify-content: center;
+  gap: 30px;
+  margin-top: 70px;
+}
+.sanpham-container .khung {
+  width: 350px;
+  height: 500px;
+}
+.sanpham-container .khung img {
+  width: 80%;
+  height: 50%;
+  display: block;
+  margin: auto;
+  border-radius: 50%;
+  background-color: rgb(68, 72, 70);
+}
+.sanpham-container .khung img:hover {
+  animation: rotate 4s linear infinite;
+  cursor: pointer;
+}
+@keyframes rotate {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+.sanpham-container .khung .content {
+  text-align: center;
+  padding-top: 40px;
+}
+
+.sanpham {
+  background-color: white;
+  padding-top: 70px;
+  height: 100%;
+}
+.sanpham p {
+  text-align: center;
+  font-size: 50px;
+  margin-bottom: 30px;
+  color: #c0d434;
+  font-weight: 600;
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande", "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+}
+
+.banner {
+  width: 100%;
+}
+.banner img {
+  width: 100%;
+}
+
+.story {
+  width: 100%;
+  height: 650px;
+  text-align: center;
+  padding-top: 100px;
+}
+.story .title {
+  font-size: 50px;
+  margin-bottom: 30px;
+  color: #c0d434;
+  font-weight: 600;
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande", "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+}
+.story .noidung {
+  width: 60%;
+  margin: auto;
+  font-size: 23px;
+}
+
+.slide {
+  z-index: -20;
+}/*# sourceMappingURL=Trangchu.css.map */

@@ -1,0 +1,111 @@
+/* Tổng thể */
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f7f5f0; /* Nền màu kem */
+    margin: 0;
+    padding: 0;
+}
+
+/* Container */
+.container {
+    background-color: #fffdf6;
+    border: 2px solid #f0e5d8;
+    border-radius: 10px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    max-width: 90%;
+    margin: 30px auto;
+}
+
+/* Tiêu đề */
+h1 {
+    color: #d2691e; /* Màu cam nhạt */
+    font-size: 26px;
+    text-transform: uppercase;
+    font-weight: bold;
+    border-bottom: 2px solid #f0e5d8;
+    padding-bottom: 10px;
+    margin-bottom: 20px;
+}
+
+/* Nút thêm bài viết */
+.btn-primary {
+    background-color: #d2691e; /* Màu cam nhạt */
+    border: none;
+    font-weight: bold;
+}
+
+.btn-primary:hover {
+    background-color: #b85c0d; /* Đậm hơn khi hover */
+}
+
+/* Bảng */
+.table {
+    background-color: #fffdf6;
+    border-collapse: collapse;
+    border: 1px solid #f0e5d8;
+    margin-top: 20px;
+}
+
+.table th {
+    background-color: #f0e5d8; /* Màu nền nhạt cho header */
+    color: #8b4513; /* Màu nâu nhạt */
+    text-align: center;
+    padding: 10px;
+    font-size: 16px;
+}
+
+.table td {
+    padding: 10px;
+    text-align: center;
+    color: #333;
+    vertical-align: middle;
+    border: 1px solid #f0e5d8;
+}
+
+.table img {
+    border: 2px solid #f0e5d8;
+    border-radius: 5px;
+}
+
+/* Nút hành động */
+.btn-warning {
+    background-color: #f0ad4e;
+    border: none;
+    font-weight: bold;
+    padding: 5px 10px;
+    font-size: 14px;
+}
+
+.btn-warning:hover {
+    background-color: #ec971f;
+}
+
+.btn-danger {
+    background-color: #d9534f;
+    border: none;
+    font-weight: bold;
+    padding: 5px 10px;
+    font-size: 14px;
+}
+
+.btn-danger:hover {
+    background-color: #c9302c;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    .table img {
+        width: 80px;
+        height: 40px;
+    }
+
+    h1 {
+        font-size: 20px;
+    }
+
+    .btn {
+        padding: 5px;
+        font-size: 12px;
+    }
+}

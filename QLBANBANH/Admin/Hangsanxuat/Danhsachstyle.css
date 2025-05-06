@@ -1,0 +1,232 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+    padding-top: 50px;
+    padding-bottom: 100px;
+}
+
+/* Sidebar */
+.sidebar {
+    width: 250px;
+    padding-right: 20px;
+}
+
+.sidebar h2 {
+    font-size: 24px;
+    margin-bottom: 20px;
+    color: #8fa300;
+}
+
+.sidebar ul {
+    list-style: none;
+    margin-top: 30px;
+}
+
+.sidebar li {
+    font-size: 18px;
+    margin-bottom: 10px;
+    cursor: pointer;
+}
+
+.sidebar li:hover {
+    color: #8fa300;
+}
+
+/* Product List */
+.header-item {
+    display: flex;
+    justify-content: flex-end;
+}
+
+.header-item .item a {
+    color: #fff;
+    background-color: #007bff;
+    border-color: #007bff;
+    font-weight: 400;
+    text-align: center;
+    padding: .50rem .75rem;
+    font-size: 1rem;
+    line-height: 1.5;
+    border-radius: .25rem;
+}
+
+.header-item .item.back a {
+    background-color: #6c757d;
+    border-color: #6c757d;
+}
+
+.product-list {
+    flex: 1;
+}
+
+.product-list h1 {
+    font-size: 32px;
+    margin-bottom: 20px;
+}
+
+.products {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+}
+
+.product {
+    text-align: left;
+    border: 1px solid #eee;
+    padding: 10px;
+    border-radius: 8px;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+}
+
+.product .product-info {
+    margin-bottom: 10px;
+}
+
+.product .product-info .product-name {
+    font-size: 18px;
+    font-weight: bold;
+}
+
+.product:hover {
+    transform: translateY(-5px);
+}
+
+.product img {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+}
+
+.product h3 {
+    font-size: 18px;
+    margin: 10px 0;
+}
+
+.product .price {
+    color: #8fa300;
+    font-size: 16px;
+    font-weight: bold;
+}
+hr{
+    height: 5px;
+    background-color:  #8fa300;
+    border: none;
+}
+.sidebar li a {
+    text-decoration: none;
+    color: #333;
+    transition: color 0.3s ease, font-weight 0.3s ease;
+}
+
+.sidebar li a:hover {
+    color: #8fa300;
+    font-weight: bold;
+}
+a {
+    text-decoration: none;
+    color: black;
+}
+
+/* Form */
+.form-container {
+    width: 50%;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+.form-container .form-group {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+.form-container .form-group .form-control {
+    display: block;
+    width: 100%;
+    padding: .375rem .75rem;
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 1.5;
+    color: #212529;
+    background-color: #fff;
+    background-clip: padding-box;
+    border: 1px solid #ced4da;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    border-radius: .25rem;
+}
+.form-container .form-group .form-control:disabled {
+    background-color: #e9ecef;
+    color: #6c757d;
+    cursor: not-allowed;
+    opacity: 1;
+}
+.form-container button {
+    cursor: pointer;
+    color: #fff;
+    background-color: #0d6efd;
+    border: none;
+    padding: .7rem 1rem;
+    border-radius: .25rem;
+}
+.alert-danger {
+    color: #842029;
+    background-color: #f8d7da;
+    border-color: #f5c2c7;
+}
+.alert-success {
+    color: #0f5132;
+    background-color: #d1e7dd;
+    border-color: #badbcc;
+}
+.alert {
+    position: relative;
+    padding: 1rem 1rem;
+    margin-bottom: 1rem;
+    border: 1px solid transparent;
+    border-radius: .25rem;
+}
+.btn {
+    display: inline-block;
+    font-weight: 400;
+    line-height: 1.5;
+    color: #212529;
+    text-align: center;
+    text-decoration: none;
+    vertical-align: middle;
+    cursor: pointer;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    user-select: none;
+    background-color: transparent;
+    border: 1px solid transparent;
+    padding: .375rem .75rem;
+    font-size: 1rem;
+    border-radius: .25rem;
+    transition: color .15s ease-in-out, background-color .15s ease-in-out, border-color .15s ease-in-out, box-shadow .15s ease-in-out;
+}
+.btn-primary {
+    color: #fff;
+    background-color: #0d6efd;
+    border-color: #0d6efd;
+}
+.btn-danger {
+    color: #fff;
+    background-color: #dc3545;
+    border-color: #dc3545;
+}

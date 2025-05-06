@@ -1,0 +1,76 @@
+body {
+    font-family: Arial, sans-serif;
+    background-image: url('../Img/banner-banh.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    margin: 0;
+    padding: 0;
+    color: #333;
+}
+
+.container {
+    width: 400px;
+    margin: 50px auto;
+    background: rgba(255, 255, 255, 0.9);
+    padding: 20px 30px;
+    border-radius: 15px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+.header {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.header h1 {
+    color: #D2691E;
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+.header p {
+    color: #8B4513;
+    font-size: 14px;
+}
+
+.form-group {
+    margin-bottom: 15px;
+}
+
+.form-group label {
+    font-size: 14px;
+    color: #5A5A5A;
+    display: block;
+    margin-bottom: 5px;
+}
+
+.form-group input {
+    width: 100%;
+    padding: 10px;
+    font-size: 14px;
+    border: 1px solid #DDD;
+    border-radius: 5px;
+    box-sizing: border-box;
+}
+
+.form-group input:focus {
+    border-color: #D2691E;
+    outline: none;
+    box-shadow: 0 0 5px rgba(210, 105, 30, 0.5);
+}
+
+.btn-submit {
+    width: 100%;
+    padding: 10px;
+    font-size: 16px;
+    background-color: #D2691E;
+    color: #FFF;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.btn-submit:hover {
+    background-color: #8B4513;
+    transition: 0.3s ease-in-out;
+}

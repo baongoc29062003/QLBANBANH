@@ -1,0 +1,86 @@
+html, body {
+    max-width: 100%;
+    height: auto;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    
+}
+
+.danhsachsp-container {
+    max-width: 1200px; /* Đặt giới hạn chiều rộng cho container */
+    margin: 0 auto; /* Căn giữa container */
+    display: grid;
+    grid-template-columns: repeat(4, 1fr); /* Chia thành 4 cột */
+    grid-auto-flow: row; /* Đảm bảo các phần tử sẽ xuống dòng */
+    gap: 30px;
+    padding: 20px;
+    margin-bottom: 150px;
+}
+
+.khung {
+    width: 100%; /* Đảm bảo khung chiếm toàn bộ chiều rộng của cột */
+    max-width: 250px; /* Giới hạn chiều rộng của khung */
+    height: 350px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.406);
+    border-radius: 8px;
+    overflow: hidden;
+    margin-top: 50px;
+
+    .imgsp{
+        height: 65%;
+    }
+}
+
+.khung img {
+    width: 100%;
+    height: 250px;
+    object-fit: cover;
+    display: block;
+    margin: auto;
+}
+.khung:hover{
+    cursor: pointer;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.459);
+}
+
+.content {
+    text-align: center;
+    padding: 10px;
+    height: 30%;
+}
+
+.content h2 {
+    color: #c0d434;
+    font-size: 18px;
+    margin: 5px 0;
+}
+
+.titleds{
+    padding-top: 50px;
+    width:100%;
+    height: 80px;
+    p{
+        text-align: center;
+        color: black;
+        font-size:35px;
+        font-weight: 700;
+        font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    }
+   
+}
+
+/* Đảm bảo hiển thị phù hợp trên màn hình nhỏ */
+@media (max-width: 768px) {
+    .danhsachsp-container {
+        grid-template-columns: repeat(2, 1fr); /* Chỉ hiển thị 2 sản phẩm mỗi dòng trên màn hình nhỏ */
+    }
+}
+
+@media (max-width: 480px) {
+    .danhsachsp-container {
+        grid-template-columns: 1fr; /* Hiển thị 1 sản phẩm mỗi dòng trên màn hình rất nhỏ */
+    }
+}
+
+

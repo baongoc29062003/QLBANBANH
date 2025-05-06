@@ -1,0 +1,118 @@
+nav{
+    background-color:#a0522d;
+    position: relative;
+    margin-bottom: 5px;
+}
+
+nav ul{
+    padding-top: 0px;
+    padding-left: 0px;
+    margin: 0px;
+    list-style: none;
+    height: 40px;
+}
+
+nav ul li{
+    position: relative;
+    border-right: solid #fff 1px;
+    float: left;
+    margin: 0 0px;
+    width: 140px;
+    text-align: center;
+}
+
+nav ul li a{
+    text-decoration: none;
+    font-size: 16px;
+    color: white;
+    padding: 0 10px;
+    line-height: 40px;
+    display: block;
+    font-variant: small-caps;
+}
+
+nav ul li a:hover{
+    color: red;
+    background-color: #FF0;
+    font-weight: bolder;
+}
+
+nav ul>li:hover>ul{
+    display: block;
+}
+
+ul.vmenu{
+    margin: 0;
+    padding: 0;
+    width: 250px;
+    list-style: none;
+    position: absolute;
+    display: none;
+    background-color: yellow;
+}
+
+ul.vmenu li{
+    margin-top: 0px;
+    border-bottom: solid 1px #fff;
+    position: relative;
+    width: 250px;
+}
+
+ul.vmenu li a{
+    display: block;
+    line-height: 40px;
+    border-bottom: 1px dotted orangered;
+    text-decoration: none;
+    font-variant: small-caps;
+    color: yellow;
+    padding-left: 15px;
+    background-color: darkcyan;
+}
+
+ul.vmenu a:hover{
+    background-color: green;
+    font-weight: bolder;
+    color: #fff;
+}
+
+ul.vmenu li>ul{
+    position: absolute;
+    margin-left: 245px;
+    width: 300px;
+    color: orangered;
+    top: 0px;
+    visibility: hidden;
+    list-style: none;
+    padding: 0;
+}
+
+ul.vmenu li>ul li{
+    border-bottom: solid 1px #fff;
+}
+
+ul.vmenu li:hover>ul{
+    visibility: visible;
+}
+
+nav .chao{
+    widows: 75px;
+    position: absolute;
+    right: 25px;
+    top: 0px;
+}
+
+nav .tim{
+    text-align: center;
+    width: 75px;
+    height: 40px;
+    color: #FFF;
+    background: #3CF;
+    border: 1px solid #FFF;
+    margin-right: 15px;
+    line-height: 40px;
+}
+
+nav .tim:hover{
+    color: #FFF;
+    background: #000;
+}

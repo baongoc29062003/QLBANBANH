@@ -1,0 +1,60 @@
+
+.khung{
+    width: 480px;
+    margin: 10px auto;
+    box-shadow: 0 0 5px red;
+    padding: 10px 20px;
+    position: relative;
+}
+
+.form-group{
+    width: 100%;
+    margin: 5px 2px;
+    clear: both;
+}
+
+.label{
+    width: 140px;
+    line-height: 35px;
+    float: left;
+    font-size: 18px;
+}
+
+.form-control{
+    width: 330px;
+    margin: 3px 0px;
+    padding: 3px;
+    line-height: 20px;
+    border: none;
+    border-radius: 3px;
+    box-shadow: 0 0 3px blue;
+    color: orangered;
+    display: block;
+    outline: none;  
+    font-size: 14px;
+}
+  /* float: right; */
+.form-control:focus{
+    box-shadow: 0 0 3px orangered;
+}
+
+h2{
+    text-align: left;
+    margin: 2px;
+}
+
+.button{
+    width: 120px;
+    margin: 20px 20px;
+    border: none;
+    border-radius: 3px;
+    box-shadow: 0 0 3px gray;
+    font-size: 15px;
+    padding: 3px;
+}
+
+.button:focus{
+    box-shadow: 0 0 2px orangered;
+    color: orangered;
+}
+
